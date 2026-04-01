@@ -19,7 +19,7 @@ const portfolioData = [
     id: 2,
     title: "Technical Skills",
     date: "Stack",
-    content: "Expertise in PHP, Laravel, MySQL, React, TypeScript,TailwindCSS and Node.js. Experienced in Linux (Ubuntu/Zorin) administration, Asterisk VOIP servers, and network maintenance.",
+    content: "Expertise in PHP, Laravel, MySQL, React, TypeScript,TailwindCSS and Node.js. Experienced in Linux administration, Asterisk VOIP servers, and network maintenance.",
     category: "Technical",
     icon: Cpu,
     relatedIds: [1, 4, 5],
