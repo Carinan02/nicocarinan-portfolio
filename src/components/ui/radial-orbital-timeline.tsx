@@ -10,7 +10,7 @@ interface TimelineItem {
   id: number;
   title: string;
   date: string;
-  content: string;
+  content: React.ReactNode;
   category: string;
   icon: React.ElementType;
   relatedIds: number[];
@@ -293,7 +293,7 @@ export default function RadialOrbitalTimeline({
                       </CardTitle>
                     </CardHeader>
                     <CardContent className="text-xs text-white/80">
-                      <p>{item.content}</p>
+                      <div className="leading-relaxed">{item.content}</div>
 
                       <div className="mt-4 pt-3 border-t border-white/10">
                         <div className="flex justify-between items-center text-xs mb-1">

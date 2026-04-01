@@ -1,6 +1,6 @@
 "use client";
 
-import { User, Cpu, Briefcase, GraduationCap, Mail, Award, Globe, Terminal } from "lucide-react";
+import { User, Cpu, Briefcase, GraduationCap, Mail, Award, Globe, Terminal, Github, Linkedin } from "lucide-react";
 import RadialOrbitalTimeline from "@/src/components/ui/radial-orbital-timeline";
 
 const portfolioData = [
@@ -63,7 +63,38 @@ const portfolioData = [
     id: 6,
     title: "Connect",
     date: "LinkedIn",
-    content: "Let's collaborate! Find me on LinkedIn at linkedin.com/in/nicocarinan or reach out for technical consultations and project inquiries.",
+    content: (
+      <div className="space-y-3">
+        <p>Let's collaborate! Reach out for technical consultations and project inquiries.</p>
+        <div className="flex flex-col space-y-2">
+          <a 
+            href="mailto:carinan02@gmail.com" 
+            className="flex items-center gap-2 hover:text-white transition-colors"
+          >
+            <Mail size={14} className="text-blue-500" />
+            <span>carinan02@gmail.com</span>
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/nicocarinan/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 hover:text-white transition-colors"
+          >
+            <Linkedin size={14} className="text-blue-500" />
+            <span>linkedin.com/in/nicocarinan</span>
+          </a>
+          <a 
+            href="https://github.com/Carinan02" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 hover:text-white transition-colors"
+          >
+            <Github size={14} className="text-blue-500" />
+            <span>github.com/Carinan02</span>
+          </a>
+        </div>
+      </div>
+    ),
     category: "Social",
     icon: Mail,
     relatedIds: [1, 4],
@@ -90,8 +121,6 @@ export function RadialOrbitalTimelineDemo() {
       />
       
       <div className="absolute bottom-10 right-10 z-50 flex items-center gap-4 text-white/30 text-xs font-mono uppercase tracking-widest">
-        <span>Scroll to Explore</span>
-        <div className="w-10 h-px bg-white/20"></div>
         <span>Click Nodes to Expand</span>
       </div>
     </div>
