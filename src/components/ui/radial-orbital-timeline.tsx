@@ -178,14 +178,13 @@ export default function RadialOrbitalTimeline({
             ></div>
             
             {centerImage ? (
-              <div className="relative w-20 h-20 rounded-full border-4 border-white/40 overflow-hidden shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-all duration-300 hover:scale-115 hover:border-white cursor-pointer z-20">
+              <div className="relative w-20 h-20 rounded-full border-2 border-white/30 overflow-hidden shadow-[0_0_20px_rgba(255,255,255,0.2)]">
                 <img 
                   src={centerImage} 
                   alt="Profile" 
-                  className="w-full h-full object-cover contrast-150 saturate-200 brightness-110 transition-all duration-500"
+                  className="w-full h-full object-cover hover:scale-125 transition-all duration-500"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
               </div>
             ) : (
               <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-500 via-blue-500 to-teal-500 animate-pulse flex items-center justify-center">
