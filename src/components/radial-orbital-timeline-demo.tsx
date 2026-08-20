@@ -2,7 +2,7 @@
 
 import { User, Cpu, Briefcase, GraduationCap, Mail, Award, Globe, Terminal, Github, Linkedin } from "lucide-react";
 import RadialOrbitalTimeline from "@/src/components/ui/radial-orbital-timeline";
-
+import nicoImage from "@/src/components/nico.jpg";
 const portfolioData = [
   {
     id: 1,
@@ -117,7 +117,7 @@ export function RadialOrbitalTimelineDemo() {
       
       <RadialOrbitalTimeline 
         timelineData={portfolioData} 
-        centerImage="nico.jpg"
+        centerImage={nicoImage}
       />
       
       <div className="absolute bottom-10 right-10 z-50 flex items-center gap-4 text-white/30 text-xs font-mono uppercase tracking-widest">
