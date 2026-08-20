@@ -117,7 +117,7 @@ export function RadialOrbitalTimelineDemo() {
       
       <RadialOrbitalTimeline 
         timelineData={portfolioData} 
-        centerImage="https://media.licdn.com/dms/image/v2/C5103AQFpBFHc75agOw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1548902034528?e=1776902400&v=beta&t=iYm3-RTeQWANlkuFL8IaoPMulpIhfxrqaTYlWWz4MOY"
+        centerImage="nico.jpg"
       />
       
       <div className="absolute bottom-10 right-10 z-50 flex items-center gap-4 text-white/30 text-xs font-mono uppercase tracking-widest">
